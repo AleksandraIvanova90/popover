@@ -1,0 +1,26 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+     "es6": true,
+     "browser": true,
+     "jest": true
+  },
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-unused-expressions": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {"devDependencies": true}],
+    "no-redeclare":["error", { "builtinGlobals": true }]
+
+  }
+
+  // "parserOptions": {
+  //   "sourceType": "module"
+  // }
+  
+}
